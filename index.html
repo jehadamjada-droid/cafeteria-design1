@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Cafeteria Design</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
+      padding: 30px 10px;
       background: white;
     }
 
     img {
       display: block;
-      width: 100%;
+
+      /* حجم الصور */
+      width: 60%;
+      max-width: 900px;
+
       height: auto;
-      margin: 0;
+
+      /* توسيط الصورة وترك مسافة بينها وبين التالية */
+      margin: 20px auto;
     }
+
+    iframe {
+      display: block;
+
+      /* حجم ملف الـ PDF */
+      width: 60%;
+      max-width: 900px;
+
+      height: 80vh;
+
+      margin: 20px auto;
+      border: none;
+    }
+
+    /* على شاشة الموبايل نخلي العرض أكبر حتى تظل الصور واضحة */
+    @media (max-width: 700px) {
+
+      img {
+        width: 95%;
+      }
+
+      iframe {
+        width: 95%;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
   <img src="image.png">
+
   <img src="R1.png">
+
   <img src="R3.png">
+
   <img src="WhatsApp%20Image%202026-08-23%20at%202.12.02%20PM.jpeg">
 
+  <iframe src="Floor%20layout-%20Cafeteria.pdf"></iframe>
 
-<iframe
-  src="Floor%20layout-%20Cafeteria.pdf"
-  style="width:100%; height:100vh; border:none;">
-</iframe>
-  
 </body>
 </html>
